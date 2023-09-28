@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ovidiu
+  labels:
+    app: ovidiu
+  namespace: namespace-workflow-1695895317543
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ovidiu
+  template:
+    metadata:
+      labels:
+        app: ovidiu
+    spec:
+      containers:
+        - name: ovidiu
+          image: acrworkflow1695895317543.azurecr.io/image-workflow-1695895317543:latest
+          ports:
+            - containerPort: 8080
