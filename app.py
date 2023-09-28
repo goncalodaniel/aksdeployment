@@ -33,7 +33,7 @@ def delay():
 
 @app.route('/healthz')
 def healthz():
-    return "Health check completed\n"
+    return "Health check completed V2\n"
 
 @app.route("/")
 def hello():
