@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testoviiu
+  name: ovidiunew
   labels:
-    app: testoviiu
-  namespace: namespace-workflow-1701064300067
+    app: ovidiunew
+  namespace: namespace-workflow-1702980523066
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: testoviiu
+      app: ovidiunew
   template:
     metadata:
       labels:
-        app: testoviiu
+        app: ovidiunew
     spec:
       containers:
-        - name: testoviiu
-          image: acrworkflow1701064300067.azurecr.io/image-workflow-1701064300067:latest
+        - name: ovidiunew
+          image: acrworkflow1702980523066.azurecr.io/image-workflow-1702980523066:latest
           ports:
             - containerPort: 8000
