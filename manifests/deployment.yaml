@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: autodeploy001
+  name: depoly002
   labels:
-    app: autodeploy001
-  namespace: namespace-workflow-1705591713349
+    app: depoly002
+  namespace: namespace-workflow-1705592954819
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: autodeploy001
+      app: depoly002
   template:
     metadata:
       labels:
-        app: autodeploy001
+        app: depoly002
     spec:
       containers:
-        - name: autodeploy001
-          image: acrovi.azurecr.io/image-workflow-1705591713349:latest
+        - name: depoly002
+          image: acrovi.azurecr.io/image-workflow-1705592954819:latest
           ports:
-            - containerPort: 8000
+            - containerPort: 8080
