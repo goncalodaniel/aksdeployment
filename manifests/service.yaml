@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: depoly002
-  namespace: namespace-workflow-1705592954819
+  name: test003
+  namespace: namespace-workflow-1705923048608
 spec:
   type: LoadBalancer
   selector:
-    app: depoly002
+    app: test003
   ports:
     - protocol: TCP
       port: 8080
