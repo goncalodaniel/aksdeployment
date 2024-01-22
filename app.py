@@ -15,7 +15,7 @@ customEndpoint = os.environ.get('FLASK_CUSTOM_ENDPOINT', "/custom")
 
 @app.route(customEndpoint)
 def custom():
-   return "Custom endpoint succeeded\n"
+   return "Custom endpoint succeeded V2\n"
 
 @app.route('/header')
 def header():
