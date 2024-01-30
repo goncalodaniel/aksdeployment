@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test003
+  name: automatic-deployment
   labels:
-    app: test003
-  namespace: namespace-workflow-1705923048608
+    app: automatic-deployment
+  namespace: automatic
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test003
+      app: automatic-deployment
   template:
     metadata:
       labels:
-        app: test003
+        app: automatic-deployment
     spec:
       containers:
-        - name: test003
-          image: acrovi.azurecr.io/image-workflow-1705923048608:latest
+        - name: automatic-deployment
+          image: acrworkflow1706607049571.azurecr.io/image-workflow-1706607049571:latest
           ports:
             - containerPort: 8080
