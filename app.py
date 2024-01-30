@@ -4,7 +4,7 @@ import logging
 from flask import Flask, jsonify, request, render_template
 import subprocess as sp
 
-app = Flask(__name__, template_folder='/usr/src/app/')
+app = Flask(__name__, template_folder='/usr/src/app')
 
 hostName = sp.getoutput("hostname")
 
