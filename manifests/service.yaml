@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: AD-Demo
+  namespace: namespace-workflow-1708364291610
+spec:
+  type: LoadBalancer
+  selector:
+    app: AD-Demo
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
